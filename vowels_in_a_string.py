@@ -1,11 +1,12 @@
 s=input()
 v=input()
 c=0
-flag=0
+
 for i in s:
     if i==v:
+        c+=1
         print("True")
-        print(s.index(i),end=" ")
+        print(s.index(i))
         break
-else:
+if(c==0):
     print("False")
