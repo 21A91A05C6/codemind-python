@@ -1,14 +1,14 @@
 n=int(input())
-b=[]
-c=0
-a=list(map(int,input().split()))
+arr=list(map(int,input().split()))
 k=int(input())
-for i in a:
-    if k==a.count(i):
-        b.append(i)
+c=0
+h=[]
+for i in arr:
+    if arr.count(i)==k:
         c+=1
-b=set(b)
+        h.append(i)
+h=set(h)
 if(c==0):
     print("-1")
 else:
-    print(*b)
+    print(*set(h))
