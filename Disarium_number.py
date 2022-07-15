@@ -1,0 +1,18 @@
+n=int(input())
+dc=0
+sum=0
+rev=0
+temp=n
+while(n>0):
+    d=n%10
+    n=n//10
+    rev=rev*10+d
+while(rev>0):
+    d=rev%10
+    rev=rev//10
+    dc+=1
+    sum=sum+pow(d,dc)
+if(sum==temp):
+    print("True")
+else:
+    print("False")
