@@ -1,8 +1,7 @@
 s=input()
 s=s.lower()
-k=sorted(set(s))
 l=""
-for i in k:
-    if i!=" ":
+for i in s:
+    if s.count(i)==1 and i!=" ":
         l+=i
-print(l)
+print("".join(sorted(l)))
