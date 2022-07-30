@@ -1,14 +1,18 @@
 n=int(input())
-arr=list(map(int,input().split()))
+d=list(map(int,input().split()))
 k,l=map(int,input().split())
 min=9
 c=0
-for i in arr:
+#print(k,l,end=" ")
+#print()
+for i in d:
     if i<k or i>l:
-        if(i<min):
-            c+=1
+        #print(i,end=" ")
+        if(min>i):
             min=i
+            c+=1
 if(c==0):
     print("-1")
 else:
     print(min)
+#print(d,end=" ")
