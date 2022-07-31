@@ -1,0 +1,22 @@
+t=int(input())
+while(t>0):
+    oct=int(input())
+    rev=0
+    c=0
+    i=0
+    k=""
+    sum=0
+    bin=[]
+    while(oct>0):
+        d=oct%10
+        oct=oct//10
+        sum=sum+d*pow(8,i)
+        i+=1
+    while(sum>0):
+        d=sum%2
+        sum=sum//2
+        bin.append(d)
+    for i in bin:
+        k+=str(i)
+    print(k[::-1])
+    t-=1
