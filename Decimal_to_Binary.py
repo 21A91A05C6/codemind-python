@@ -1,7 +1,10 @@
+def dec_to_bin(n):
+    if(n>1):
+        dec_to_bin(n//2)
+    print(n%2,end="")
 t=int(input())
 while(t>0):
     n=int(input())
-    n=bin(n)
-    n=n.replace("0b","")
-    print(n)
+    dec_to_bin(n)
+    print()
     t-=1
