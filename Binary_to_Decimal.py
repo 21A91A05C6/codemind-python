@@ -1,0 +1,12 @@
+t=int(input())
+while(t>0):
+    n=int(input())
+    sum=0
+    i=0
+    while(n>0):
+        d=n%10
+        n=n//10
+        sum=sum+d*pow(2,i)
+        i+=1
+    print(sum)
+    t-=1
