@@ -1,0 +1,9 @@
+n,m=map(int,input().split())
+n=str(n)
+a=n[:m]
+n=n[::-1]
+b=n[:m]
+b=b[::-1]
+a=int(a)
+b=int(b)
+print(abs(b-a))
