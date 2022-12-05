@@ -12,7 +12,3 @@ if l==b:
     print("Yes")
 else:
     print("No")
-'''print(a)
-print(b)
-print(c)
-print(l)'''
