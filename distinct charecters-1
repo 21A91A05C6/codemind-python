@@ -1,0 +1,11 @@
+s=input()
+s=s.lower()
+l=[]
+res=""
+for i in s:
+    if i!=" " and s.count(i)==1:
+        l.append(i)
+l=sorted(l)
+for i in l:
+    res+=i
+print(res)
