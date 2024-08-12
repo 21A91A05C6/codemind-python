@@ -1,0 +1,23 @@
+def isprime(n):
+  if n==0 or n==1:
+    return 0
+  for i in range(2,int(n**(0.5))+1):
+    if n%i==0:
+      return 0
+  else:
+    return 1
+  n=int(input())
+  if isprime(n)==0:
+    print('NO')
+  else:
+    pp=n-1
+    while(isprime(pp)==0):
+      pp-=1
+    np=n+1
+    while(isprime(np)==0):
+      np+=1
+    if n>(pp+np)/2:
+      print('YES')
+    else:
+      print('NO')
+    
